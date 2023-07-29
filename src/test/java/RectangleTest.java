@@ -14,5 +14,8 @@ public class RectangleTest {
     public void getAndSetTest(){
         Rectangle rectangle = new Rectangle();
         assertEquals(5, rectangle.height = 5);
+        assertEquals(10, rectangle.height = 10);
+        assertEquals(4, rectangle.width = 4);
+        assertEquals(8, rectangle.width = 8);
     }
 }
