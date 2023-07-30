@@ -1,6 +1,7 @@
 public class Rectangle implements Area {
     private final Side height;
     private final Side width;
+
     public Rectangle(double height, double width) {
         this.height = new Side(height);
         this.width = new Side(width);
@@ -17,5 +18,4 @@ public class Rectangle implements Area {
     public Side getWidthSide() {
         return width;
     }
-
 }
