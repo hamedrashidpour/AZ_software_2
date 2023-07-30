@@ -13,4 +13,9 @@ public class Square {
         return side;
     }
 
+    public double computeArea(){
+        double area = this.side * this.side;
+        return area;
+    }
+
 }
