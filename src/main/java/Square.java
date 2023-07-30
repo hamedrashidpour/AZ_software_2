@@ -1,3 +1,11 @@
 public class Square {
-    public double side;
+    public void setSide(double side) {
+        this.side = side;
+    }
+
+    public double getSide() {
+        return side;
+    }
+
+    private double side;
 }
