@@ -6,6 +6,7 @@ public class RectangleTest {
     @Test
     public void  computeAreaTest(){
         Rectangle rectangle = new Rectangle();
+        assertEquals(4.5, rectangle.computeArea(), 0);
         rectangle.setHeight(5);
         rectangle.setWidth(2);
         assertEquals(10, rectangle.computeArea());
