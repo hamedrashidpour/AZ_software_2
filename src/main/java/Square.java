@@ -5,7 +5,6 @@ public class Square implements Area{
         this.side =new Side(side);
     }
 
-
     public Side getSide() {
         return side;
     }

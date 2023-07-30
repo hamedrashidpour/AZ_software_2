@@ -11,6 +11,4 @@ public class Side {
      public void setLength(double length) {
           this.length = length;
      }
-
-
 }
