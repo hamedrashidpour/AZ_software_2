@@ -1,20 +1,17 @@
-public class Square {
-    private double side;
+public class Square implements Area{
+    private final Side side;
 
     public Square(double side) {
-        this.side = side;
+        this.side =new Side(side);
     }
 
-    public void setSide(double side) {
-        this.side = side;
-    }
 
-    public double getSide() {
+    public Side getSide() {
         return side;
     }
-
+    @Override
     public double computeArea(){
-        return this.side * this.side;
+        return this.side.getLength() * this.side.getLength();
     }
 
 }
