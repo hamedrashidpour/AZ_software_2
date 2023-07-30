@@ -1,27 +1,21 @@
-public class Rectangle {
-    private double height;
-    private double width;
+public class Rectangle implements Area {
+    private final Side height;
+    private final Side width;
     public Rectangle(double height, double width) {
-        this.height = height;
-        this.width = width;
+        this.height = new Side(height);
+        this.width = new Side(width);
     }
+    @Override
     public double computeArea(){
-        return this.height * this.width;
+        return this.height.getLength() * this.width.getLength();
     }
 
-    public double getHeight() {
+    public Side getHeightSide() {
         return height;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public double getWidth() {
+    public Side getWidthSide() {
         return width;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
 }
