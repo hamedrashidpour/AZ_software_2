@@ -6,6 +6,7 @@ import org.junit.Test;
 public class SquareTest {
     @Test
     public void SquareSideTest(){
-        assertEquals(5.0, Square.side = 5.0, 0);
+        Square square = new Square();
+        assertEquals(5.0, square.side = 5.0, 0);
     }
 }
