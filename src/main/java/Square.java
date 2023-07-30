@@ -1,4 +1,10 @@
 public class Square {
+    private double side;
+
+    public Square(double side) {
+        this.side = side;
+    }
+
     public void setSide(double side) {
         this.side = side;
     }
@@ -7,5 +13,4 @@ public class Square {
         return side;
     }
 
-    private double side;
 }
