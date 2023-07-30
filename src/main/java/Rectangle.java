@@ -1,13 +1,15 @@
 public class Rectangle {
-    private int height;
-    private int width;
-    public Rectangle() {
+    private double height;
+    private double width;
+    public Rectangle(double height, double width) {
+        this.height = height;
+        this.width = width;
     }
-    public long computeArea(){
-        return (long) this.height * this.width;
+    public double computeArea(){
+        return this.height * this.width;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
@@ -15,7 +17,7 @@ public class Rectangle {
         this.height = height;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
